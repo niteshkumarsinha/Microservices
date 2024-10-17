@@ -3,6 +3,7 @@ kind: Ingress
 metadata:
   name: ingress-srv
   annotations:
+    networking.gke.io/load-balancer-type: "External"
     nginx.ingress.kubernetes.io/use-regex: 'true'
 spec:
   ingressClassName: nginx
