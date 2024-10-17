@@ -11,7 +11,7 @@ const PostList = () => {
         //const res = await axios.get('http://localhost:4000/posts');
 
         //request to query service
-        const res = await axios.get('http://posts.com/posts');
+        const res = await axios.get('http://devops-practice.com/posts');
         setPosts(res.data);
     }
 
