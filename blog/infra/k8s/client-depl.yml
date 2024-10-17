@@ -15,10 +15,6 @@ spec:
       containers:
         - name: client
           image: nkuma255/client
-          env:
-            - name: NODE_OPTIONS
-              value: '--openssl-legacy-provider'
-
 ---
 apiVersion: v1
 kind: Service
