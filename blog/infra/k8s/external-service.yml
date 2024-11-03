@@ -5,4 +5,4 @@ metadata:
   namespace: default  # Same namespace as Ingress
 spec:
   type: ExternalName
-  externalName: ingress-service-proxy.ingress-nginx.svc.cluster.local
+  externalName: ingress-nginx-controller.ingress-nginx.svc.cluster.local
