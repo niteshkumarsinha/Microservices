@@ -5,6 +5,7 @@ metadata:
   annotations:
     nginx.ingress.kubernetes.io/rewrite-target: /
     nginx.ingress.kubernetes.io/use-regex: 'true'
+    networking.gke.io/load-balancer-ip: 34.173.89.225
 spec:
   ingressClassName: nginx
   rules:
