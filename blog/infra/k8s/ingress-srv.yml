@@ -5,7 +5,6 @@ metadata:
   annotations:
     nginx.ingress.kubernetes.io/rewrite-target: /
     nginx.ingress.kubernetes.io/use-regex: 'true'
-    networking.gke.io/load-balancer-ip: 34.173.89.225
 spec:
   ingressClassName: nginx
   rules:
@@ -40,3 +39,11 @@ spec:
                 name: client-srv
                 port:
                   number: 3000
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: ingress-nginx-controller   # Replace with your service name
+                namespace: ingress-nginx
+                port:
+                  number: 80 
